@@ -12,16 +12,16 @@ const Footer = () => {
   return <footer>
       <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col col-first">
               <Image src={Logo} alt='' className='logo'/>
               <p>Lorem ipsum dolor sit amet, consectetur 
                 sed do eiusmod tempor incididunt ut l
                 magna aliqua. Ut enim ad minim veniam, 
               </p>
             </div>
-            <div className="col">
+            <div className="col col-second">
               <h4 className="footer-title">Mapa do Site</h4>
-              <ul>
+              <ul className="footer-list">
                 <li><Link href="#">Home</Link></li>
                 <li><Link href="#">Quem somos</Link></li>
                 <li><Link href="#">Projetos</Link></li>
@@ -36,16 +36,18 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="col">
+            <div className="col col-third">
               <h4 className="footer-title">Mapa do Site</h4>
-              <p>Lorem Ipsum</p>
-              <p>Lorem Ipsum</p>
-              <Link href="#" className='contact'>
-                <Image src={iconFacebook} alt=''/>
+              <ul className='footer-list'>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+              <Link href="#" className='row-contact'>
+                <Image src={iconTelephone} alt=''/>
                 (xx) xxxxx-xxxx
               </Link>
-              <Link href="#" className='contact'>
-                <Image src={iconFacebook} alt=''/>
+              <Link href="#" className='row-contact'>
+                <Image src={iconTelephone} alt=''/>
                 (xx) xxxxx-xxxx
               </Link>
             </div>
