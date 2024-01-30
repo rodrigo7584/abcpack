@@ -1,4 +1,58 @@
-:root{
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./footer.css');
+* {
+  box-sizing: border-box;
   font-family: var(--font-rubik);
 }
-  
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-orange: #ffb700;
+  --color-blue: #382c97;
+  --color-gray: #1b1b1b;
+  --color-light-gray: #efefef;
+  --color-waboo: #bdff1c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.container-fluid {
+  max-width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 400px) {
+}

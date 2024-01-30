@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+
+import Header from '../components/header'
+import Footer from '../components/footer'
+
 import '../styles/global.css'
 import { Rubik } from "next/font/google";
 
@@ -20,8 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={rubik.variable}>{children}</body>
+    <html lang="pt-br">
+      <body className={rubik.variable}>
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
