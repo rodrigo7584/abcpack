@@ -5,6 +5,10 @@
   box-sizing: border-box!important;
   font-family: var(--font-rubik)!important;
 }
+img{
+  height: auto;
+  width: auto;
+}
 :root { 
   font-size: 62.5%;
   scroll-behavior: smooth;

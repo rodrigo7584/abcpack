@@ -31,7 +31,11 @@ const Header = () => {
             <Image src={logo} quality={100} alt="" className="logo-img" />
           </Link>
           <nav className={isMenuOpen ? 'active' : ''}>
-            <button className={isMenuOpen ? 'btn-mobile-menu active' : 'btn-mobile-menu'}>
+            <button
+              className={
+                isMenuOpen ? 'btn-mobile-menu active' : 'btn-mobile-menu'
+              }
+            >
               <div></div>
               <div></div>
               <div></div>
@@ -48,9 +52,6 @@ const Header = () => {
               </li>
               <li className="menu-item">
                 <Link href="#contact">Contato</Link>
-              </li>
-              <li className="menu-item">
-                <Link href="#clientes">Clientes</Link>
               </li>
             </ul>
           </nav>

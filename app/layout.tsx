@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import Header from '../components/header'
 import Footer from '../components/footer'
 
+import 'swiper/css'
 import '../styles/global.css'
+
 import { Rubik } from "next/font/google";
 
 const rubik = Rubik({ 
