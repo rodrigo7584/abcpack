@@ -8,15 +8,16 @@ import { Navigation } from 'swiper/modules'
 
 import Image from 'next/image'
 
-const swiperDataPortfolio = [
+const swiperDataProjects = [
   { src: Product1Image },
   { src: Product2Image },
-  { src: Product3Image }
+  { src: Product3Image },
+  { src: Product1Image }
 ]
 
 const SwiperProjects = () => {
   return (
-    <div className="swiper-portfolio">
+    <div className="swiper-project">
       <Image
         src={'/icon-arrow.png'}
         className="swiper-button-next control-button"
@@ -27,8 +28,8 @@ const SwiperProjects = () => {
       />
       <Swiper
         navigation={{
-          prevEl: '.swiper-portfolio .swiper-button-prev',
-          nextEl: '.swiper-portfolio .swiper-button-next'
+          prevEl: '.swiper-project .swiper-button-prev',
+          nextEl: '.swiper-project .swiper-button-next'
         }}
         modules={[Navigation]}
         slidesPerView={1}
@@ -44,17 +45,10 @@ const SwiperProjects = () => {
         }}
         className="mySwiper"
       >
-        {swiperDataPortfolio.map((slide, index) => (
+        {swiperDataProjects.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="portfolio-box">
-              <Image
-                className="portfolio-img"
-                src={slide.src}
-                width={417}
-                height={495}
-                quality={100}
-                alt=""
-              />
+            <div className="project-box">
+              <Image className="project-img" src={slide.src} quality={100} alt="" />
             </div>
           </SwiperSlide>
         ))}

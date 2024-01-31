@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import SwiperProjects from "../components/swiperProjects"
-import SwiperClients from "../components/swiperClients"
+import SwiperProjects from "../components/SwiperProjects"
+import SwiperClients from "../components/SwiperClients"
 
 
 import HeroImage from "../public/products.png"
 import AboutUsImage from "../public/about-us.png"
 import IconPack from "../public/icon-pack.png"
-import IconCheck from "../public/icon-checked.png"
 import ProductCustomImage from "../public/packs.png"
 import BagsImage from "../public/bags.png"
 
@@ -157,13 +156,60 @@ export default function Home() {
       <section className="custom">
         <div className="container">
           <div className="row">
-
+            <div className="col-left">
+              <h1 className="title">
+                Ao escolher as Embalagens 
+                Personalizadas ABC Pack 
+                hoje, você receberá:
+              </h1>
+              <ul>
+                <li>
+                  <p className="text-complementary">
+                    <span>5% de desconto</span>
+                    na primeira compra.
+                  </p>
+                </li>
+                <li>
+                  <p className="text-complementary">
+                   <span>Consultoria gratuita </span> para
+                    o design da sua embalagem.
+                  </p>
+                </li>
+              </ul>
+              <p>
+                Não perca a oportunidade de se destacar da
+                concorrência e encantar seus clientes a cada 
+                entrega. Faça do seu delivery uma experiência 
+                única com as Embalagens Personalizadas ABC Pack.
+                <span>Clique no botão abaixo para transformar a forma 
+                como seu negócio é percebido!</span>
+              </p>
+              <Link href="#" className="btn btn-blue">Quero Transformar meu Delivery Agora!</Link>
+              <p>*Consulte os termos e condições.</p>
+            </div>
+            <div className="col-right">
+              <div className="image">
+                <Image src={ProductCustomImage} quality={100} alt=""/>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section className="contact" id="contact">
         <div className="container">
           <div className="row">
+            <div className="col-left">
+              <Image src={BagsImage} alt=""/>
+            </div>
+            <div className="col-right">
+              <h2 className="subtitle">Contato</h2>
+              <h1 className="title">Vamos conversar?</h1>
+              <p>
+                Vamos crescer o seu negócio e impusionar suas
+                vendas com soluções que são novas tendências 
+                no mercado.
+              </p>
+            </div>
           </div>
         </div>  
       </section>

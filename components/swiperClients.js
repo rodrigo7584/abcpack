@@ -1,7 +1,5 @@
 'use client'
-import Product1Image from '../public/product-1.png'
-import Product2Image from '../public/product-2.png'
-import Product3Image from '../public/product-3.png'
+import photoClient from '../public/photo-client.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
@@ -9,9 +7,30 @@ import { Navigation } from 'swiper/modules'
 import Image from 'next/image'
 
 const swiperDataClients = [
-  { src: Product1Image },
-  { src: Product2Image },
-  { src: Product3Image }
+  {
+    src: photoClient,
+    comentary: `"Desde que começamos a usar as embalagens personalizadas ABC Pack, notamos um aumento significativo na satisfação dos clientes. A apresentação dos nossos pratos agora é impecável!"`,
+    place: 'Restaurante Sabor & Arte',
+    area: 'Restaurante'
+  },
+  {
+    src: photoClient,
+    comentary: `"Desde que começamos a usar as embalagens personalizadas ABC Pack, notamos um aumento significativo na satisfação dos clientes. A apresentação dos nossos pratos agora é impecável!"`,
+    place: 'Restaurante Sabor & Arte',
+    area: 'Restaurante'
+  },
+  {
+    src: photoClient,
+    comentary: `"Desde que começamos a usar as embalagens personalizadas ABC Pack, notamos um aumento significativo na satisfação dos clientes. A apresentação dos nossos pratos agora é impecável!"`,
+    place: 'Restaurante Sabor & Arte',
+    area: 'Restaurante'
+  },
+  {
+    src: photoClient,
+    comentary: `"Desde que começamos a usar as embalagens personalizadas ABC Pack, notamos um aumento significativo na satisfação dos clientes. A apresentação dos nossos pratos agora é impecável!"`,
+    place: 'Restaurante Sabor & Arte',
+    area: 'Restaurante'
+  }
 ]
 
 const swiperClients = () => {
@@ -47,14 +66,12 @@ const swiperClients = () => {
         {swiperDataClients.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="clients-box">
-              <Image
-                className="clients-img"
-                src={slide.src}
-                width={417}
-                height={495}
-                quality={100}
-                alt=""
-              />
+              <div className="photo">
+                <Image className="clients-img" src={slide.src} quality={100} alt="" />
+              </div>
+              <p className="text-comentary">{slide.comentary}</p>
+              <h3 className="title-comentary">{slide.place}</h3>
+              <p className="place">{slide.area}</p>
             </div>
           </SwiperSlide>
         ))}
