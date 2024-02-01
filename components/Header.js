@@ -28,14 +28,10 @@ const Header = () => {
       <div className="container">
         <div className="row">
           <Link href="/" className="logo">
-            <Image src={logo} quality={100} alt="" className="logo-img" />
+            <Image src={logo} quality={100} priority alt="" className="logo-img" />
           </Link>
           <nav className={isMenuOpen ? 'active' : ''}>
-            <button
-              className={
-                isMenuOpen ? 'btn-mobile-menu active' : 'btn-mobile-menu'
-              }
-            >
+            <button className={isMenuOpen ? 'btn-mobile-menu active' : 'btn-mobile-menu'}>
               <div></div>
               <div></div>
               <div></div>

@@ -62,7 +62,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="col-right">
-              <Image src={HeroImage} quality={100} alt=""/>
+              <Image src={HeroImage} quality={100} priority alt=""/>
             </div>
           </div>
         </div>
