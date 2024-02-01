@@ -33,7 +33,7 @@ const swiperDataClients = [
   }
 ]
 
-const swiperClients = () => {
+const SwiperClients = () => {
   return (
     <div className="swiper-clients">
       <Image
@@ -68,12 +68,7 @@ const swiperClients = () => {
           <SwiperSlide key={index}>
             <div className="clients-box">
               <div className="photo">
-                <Image
-                  className="clients-img"
-                  src={slide.src}
-                  quality={100}
-                  alt=""
-                />
+                <Image className="clients-img" src={slide.src} quality={100} alt="" />
               </div>
               <p className="text-comentary">{slide.comentary}</p>
               <h3 className="title-comentary">{slide.place}</h3>
@@ -93,4 +88,4 @@ const swiperClients = () => {
     </div>
   )
 }
-export default swiperClients
+export default SwiperClients
