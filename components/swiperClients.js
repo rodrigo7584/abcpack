@@ -46,18 +46,19 @@ const swiperClients = () => {
       />
       <Swiper
         navigation={{
-          prevEl: '.swiper-clients .swiper-button-prev',
-          nextEl: '.swiper-clients .swiper-button-next'
+          prevEl: '.swiper-clients .swiper-button-next',
+          nextEl: '.swiper-clients .swiper-button-prev'
         }}
         modules={[Navigation]}
         slidesPerView={1}
+        loop={true}
         breakpoints={{
           640: {
             slidesPerView: 2,
             spaceBetween: 20
           },
           992: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 40
           }
         }}
@@ -67,7 +68,12 @@ const swiperClients = () => {
           <SwiperSlide key={index}>
             <div className="clients-box">
               <div className="photo">
-                <Image className="clients-img" src={slide.src} quality={100} alt="" />
+                <Image
+                  className="clients-img"
+                  src={slide.src}
+                  quality={100}
+                  alt=""
+                />
               </div>
               <p className="text-comentary">{slide.comentary}</p>
               <h3 className="title-comentary">{slide.place}</h3>

@@ -1,0 +1,68 @@
+.custom{
+  padding: 4rem 0;
+  background: var(--color-orange);
+}
+.custom .row{
+  display: grid;
+  grid-template-columns: calc(55% - 2rem) calc(45% - 2rem);
+  align-items: center;
+  gap: 4rem;
+}
+.custom .box-image{
+  width: 100%;
+  height: 60rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: block;
+  filter: drop-shadow(-15px 15px 0px var(--color-orange));
+}
+.custom .box-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.custom .list-custom {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.custom .list-custom li{
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.custom .list-custom li::before{
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-image: url('../public/icon-round-checked.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.custom .title,
+.custom p{
+  color: var(--color-white);
+}
+.custom .btn{
+  margin: 2rem 0;
+}
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 400px) {
+}

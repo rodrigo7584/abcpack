@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import SwiperProjects from "../components/SwiperProjects"
 import SwiperClients from "../components/SwiperClients"
-
+import EnviarEmail from "../components/EnviarEmail"
 
 import HeroImage from "../public/products.png"
 import AboutUsImage from "../public/about-us.png"
@@ -48,7 +48,7 @@ export default function Home() {
               <h1 className="title">
                 As Embalagens 
                 Personalizadas ABC Pack
-                <span>são a solução ideal para
+                <span> são a solução ideal para
                 destacar o seu negócio
                 </span>
               </h1>
@@ -70,8 +70,10 @@ export default function Home() {
       <section className="about-us" id="about-us">
         <div className="container">
           <div className="row">
-            <div className="col-letf">
-              <Image src={AboutUsImage} quality={100} alt=""/>
+            <div className="col-left">
+              <div className="box-image">
+                <Image src={AboutUsImage} quality={100} alt=""/>
+              </div>
             </div>
             <div className="col-right">
               <h2 className="subtitle">
@@ -101,13 +103,13 @@ export default function Home() {
               <h1 className="title">Por que escolher as Embalagens 
                 Personalizadas ABC Pack?
               </h1>
-              <div className="qualities">
+              <div className="box-qualities">
                 {qualities.map((quality, index) => (
                   <div className="quality" key={index}>
                     <div className="icon">
                       <Image src={IconPack} quality={100} alt=""/>
                     </div>
-                    <h2>{quality.title}</h2>
+                    <h2 className="quality-title">{quality.title}</h2>
                     <p>{quality.text}</p>
                   </div>
                 ))}
@@ -126,7 +128,7 @@ export default function Home() {
               <h1 className="title">
                 Nossos projetos
               </h1>
-              <p>
+              <p className="complement">
                 Conheça um pouco das embalagens personalizadas
                 produzidar por nós que surpreende nossos clientes.
               </p>
@@ -162,7 +164,7 @@ export default function Home() {
                 Personalizadas ABC Pack 
                 hoje, você receberá:
               </h1>
-              <ul>
+              <ul className="list-custom">
                 <li>
                   <p className="text-complementary">
                     <span>5% de desconto</span>
@@ -188,7 +190,7 @@ export default function Home() {
               <p>*Consulte os termos e condições.</p>
             </div>
             <div className="col-right">
-              <div className="image">
+              <div className="box-image">
                 <Image src={ProductCustomImage} quality={100} alt=""/>
               </div>
             </div>
@@ -202,13 +204,14 @@ export default function Home() {
               <Image src={BagsImage} alt=""/>
             </div>
             <div className="col-right">
-              <h2 className="subtitle">Contato</h2>
+              <h2 className="subtitle"><span>Contato</span></h2>
               <h1 className="title">Vamos conversar?</h1>
               <p>
                 Vamos crescer o seu negócio e impusionar suas
                 vendas com soluções que são novas tendências 
                 no mercado.
               </p>
+              <EnviarEmail/>
             </div>
           </div>
         </div>  

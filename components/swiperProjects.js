@@ -28,18 +28,19 @@ const SwiperProjects = () => {
       />
       <Swiper
         navigation={{
-          prevEl: '.swiper-project .swiper-button-prev',
-          nextEl: '.swiper-project .swiper-button-next'
+          prevEl: '.swiper-project .swiper-button-next',
+          nextEl: '.swiper-project .swiper-button-prev'
         }}
         modules={[Navigation]}
-        slidesPerView={1}
+        slidesPerView={3}
+        loop={true}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 20
           },
           992: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 40
           }
         }}
@@ -48,7 +49,12 @@ const SwiperProjects = () => {
         {swiperDataProjects.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="project-box">
-              <Image className="project-img" src={slide.src} quality={100} alt="" />
+              <Image
+                className="project-img"
+                src={slide.src}
+                quality={100}
+                alt=""
+              />
             </div>
           </SwiperSlide>
         ))}
@@ -56,8 +62,8 @@ const SwiperProjects = () => {
       <Image
         src={'/icon-arrow.png'}
         className="swiper-button-prev control-button"
-        width={36}
-        height={36}
+        width={30}
+        height={30}
         quality={100}
         alt=""
       />

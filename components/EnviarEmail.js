@@ -45,11 +45,28 @@ const EnviarEmail = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="name" placeholder="Nome" onChange={handleChange} />
-      <input type="text" name="number" placeholder="Informe seu número" onChange={handleChange} />
+      <input
+        type="text"
+        name="name"
+        placeholder="Nome"
+        onChange={handleChange}
+      />
+      <input
+        type="text"
+        name="telefone"
+        placeholder="Telefone"
+        onChange={handleChange}
+      />
+      <input
+        type="text"
+        name="email"
+        placeholder="Email"
+        onChange={handleChange}
+      />
+      <textarea name="message" placeholder="Mensagem" onChange={handleChange} />
       <p>{message}</p> {/* Exibe a mensagem aqui */}
-      <button type="submit" className="btn-green">
-        Enviar
+      <button type="submit" className="btn btn-blue">
+        Enviar mensagem
       </button>
     </form>
   )

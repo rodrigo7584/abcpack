@@ -1,0 +1,55 @@
+.qualities{
+ padding: 4rem;
+}
+.qualities .title{
+  width: 70rem;
+}
+.qualities .box-qualities{
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - 1.5rem));
+  gap: 2rem;
+  padding: 3rem 0;
+}
+.qualities .quality{
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  gap: 1.5rem;
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0,0,0, 0.1 ));
+}
+.qualities .quality .icon{
+  background-color: var(--color-orange);
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qualities .quality .icon img{
+  width: 2rem;
+}
+.qualities .quality-title{
+  font-size: 1.8rem;
+  color: var(--color-blue);
+  font-weight: var(--bold);
+}
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 400px) {
+}

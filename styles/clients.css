@@ -1,0 +1,83 @@
+.clients{
+  padding: 4rem 0;
+}
+.clients .title,
+.clients .subtitle{
+  text-align: center;
+}
+
+.swiper-clients {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3rem calc(100% - 6rem) 3rem;
+  padding: 5rem 0;
+}
+.swiper-clients .swiper {
+  width: 100%;
+}
+.swiper-clients .clients-box {
+  padding: 1.5rem;
+  background-color: var(--color-white);
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0,0,0, 0.1 ));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.swiper-clients .clients-box .photo{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+  background-color: var(--color-orange);
+  margin: 2rem;
+}
+.swiper-clients .clients-box .photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-clients .clients-box .text-comentary{
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.swiper-clients .clients-box .title-comentary{
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--color-blue);
+  font-weight: var(--bold);
+  margin-bottom: 0.5rem;
+}
+.swiper-clients .swiper-button-next,
+.swiper-clients .swiper-button-prev {
+  width: 2.5rem;
+  margin: 0 0.25rem;
+}
+.swiper-clients .swiper-button-next:hover,
+.swiper-clients .swiper-button-prev:hover {
+  cursor: pointer;
+}
+.swiper-clients .swiper-button-next {
+  transform: rotate(180deg);
+}
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 400px) {
+}

@@ -1,0 +1,42 @@
+.about-us{
+  padding: 4rem 0;
+}
+.about-us .row{
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 4rem));
+  gap: 4rem;
+  align-items: center;
+}
+.about-us .box-image{
+  width: 100%;
+  height: 45rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: block;
+  filter: drop-shadow(-15px 15px 0px var(--color-orange));
+}
+.about-us .box-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-us p{
+  margin-bottom: 2rem;
+}
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 400px) {
+}
