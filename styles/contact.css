@@ -1,53 +1,64 @@
-.contact{
+.contact {
   padding: 4rem 0;
 }
-.contact .row{
+.contact .row {
   display: grid;
   grid-template-columns: repeat(2, calc(50% - 4rem));
   align-items: center;
   gap: 4rem;
 }
-.contact .row .col-left{
+.contact .row .col-left {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact .row .col-left img{
+.contact .row .col-left img {
   width: 40rem;
   height: auto;
 }
 
-.contact form{
+.contact form {
   margin: 2rem 0;
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
 .contact form input,
-.contact form textarea{
+.contact form textarea {
   border: none;
   border-radius: 0.5rem;
   background: var(--color-light-gray);
   padding: 1.5rem;
 }
-.contact form textarea{
+.contact form textarea {
   resize: none;
   height: 15rem;
 }
 @media (max-width: 1400px) {
-
 }
 @media (max-width: 1200px) {
-
 }
 @media (max-width: 992px) {
-
 }
 @media (max-width: 768px) {
-
+  .contact .row {
+    grid-template-columns: 100%;
+  }
+  .contact .col-right {
+    order: 1;
+  }
+  .contact .col-left {
+    order: 2;
+  }
 }
 @media (max-width: 576px) {
-
+  .contact .row .col-left img {
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
+  .contact .row .col-left img {
+    padding: 0 3rem;
+    max-width: 100%;
+  }
 }

@@ -100,6 +100,7 @@ END
     visibility: hidden;
     overflow: hidden;
     z-index: 99;
+    background-color: var(--color-orange);
   }
   .menu nav.active ul {
     height: calc(100vh - 7.89rem);

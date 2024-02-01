@@ -32,11 +32,11 @@ const SwiperProjects = () => {
           nextEl: '.swiper-project .swiper-button-prev'
         }}
         modules={[Navigation]}
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
         breakpoints={{
-          640: {
-            slidesPerView: 3,
+          576: {
+            slidesPerView: 2,
             spaceBetween: 20
           },
           992: {
@@ -49,12 +49,7 @@ const SwiperProjects = () => {
         {swiperDataProjects.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="project-box">
-              <Image
-                className="project-img"
-                src={slide.src}
-                quality={100}
-                alt=""
-              />
+              <Image className="project-img" src={slide.src} quality={100} alt="" />
             </div>
           </SwiperSlide>
         ))}

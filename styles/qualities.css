@@ -1,25 +1,25 @@
-.qualities{
- padding: 4rem;
+.qualities {
+  padding: 4rem 0;
 }
-.qualities .title{
+.qualities .title {
   width: 70rem;
 }
-.qualities .box-qualities{
+.qualities .box-qualities {
   display: grid;
   grid-template-columns: repeat(4, calc(25% - 1.5rem));
   gap: 2rem;
   padding: 3rem 0;
 }
-.qualities .quality{
+.qualities .quality {
   background: var(--color-white);
   display: flex;
   flex-direction: column;
   padding: 2rem;
   border-radius: 0.5rem;
   gap: 1.5rem;
-  filter: drop-shadow(0 0.5rem 0.5rem rgba(0,0,0, 0.1 ));
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.1));
 }
-.qualities .quality .icon{
+.qualities .quality .icon {
   background-color: var(--color-orange);
   border-radius: 0.5rem;
   width: 5rem;
@@ -28,28 +28,38 @@
   justify-content: center;
   align-items: center;
 }
-.qualities .quality .icon img{
+.qualities .quality .icon img {
   width: 2rem;
 }
-.qualities .quality-title{
+.qualities .quality-title {
   font-size: 1.8rem;
   color: var(--color-blue);
   font-weight: var(--bold);
 }
 @media (max-width: 1400px) {
-
 }
 @media (max-width: 1200px) {
-
 }
 @media (max-width: 992px) {
-
+  .qualities .title {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
-
+  .qualities .box-qualities {
+    grid-template-columns: repeat(2, calc(50% - 3rem));
+  }
 }
 @media (max-width: 576px) {
-
+  .qualities {
+    padding: 1.5rem 0;
+  }
+  .qualities .box-qualities {
+    grid-template-columns: 100%;
+  }
+  .qualities .box-qualities {
+    padding: 1rem 0;
+  }
 }
 @media (max-width: 400px) {
 }
