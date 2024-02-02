@@ -15,8 +15,8 @@ const swiperDataClients = [
   },
   {
     src: photoClient,
-    comentary: `"Desde que começamos a usar as embalagens personalizadas ABC Pack, notamos um aumento significativo na satisfação dos clientes. A apresentação dos nossos pratos agora é impecável!"`,
-    place: 'Restaurante Sabor & Arte',
+    comentary: `"Sempre muito bem atendida, produtos de extrema qualidade e sempre cumprem o prazo de entrega (quando não entregam antes do prazo rs). Quando o trabalho é bem feito, a gente tem ate gosto de recomendar"`,
+    place: 'Amanda Mayume',
     area: 'Restaurante'
   },
   {

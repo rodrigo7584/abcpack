@@ -2,6 +2,11 @@
 import Product1Image from '../public/product-1.png'
 import Product2Image from '../public/product-2.png'
 import Product3Image from '../public/product-3.png'
+import Product4Image from '../public/product-4.jpeg'
+import Product5Image from '../public/product-5.png'
+import Product6Image from '../public/product-6.png'
+import Product7Image from '../public/product-7.jpeg'
+import Product8Image from '../public/packs.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
@@ -12,7 +17,11 @@ const swiperDataProjects = [
   { src: Product1Image },
   { src: Product2Image },
   { src: Product3Image },
-  { src: Product1Image }
+  { src: Product4Image },
+  { src: Product5Image },
+  { src: Product6Image },
+  { src: Product7Image },
+  { src: Product8Image }
 ]
 
 const SwiperProjects = () => {
