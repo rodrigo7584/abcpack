@@ -8,7 +8,7 @@ import EnviarEmail from "../components/EnviarEmail"
 import HeroImage from "../public/products.png"
 import AboutUsImage from "../public/about-us.png"
 import IconPack from "../public/icon-pack.png"
-import ProductCustomImage from "../public/product-5.png"
+import ProductCustomImage from "../public/packs-2.png"
 import BagsImage from "../public/bags.png"
 
 export default function Home() {
