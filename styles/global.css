@@ -99,6 +99,7 @@ p span {
   font-weight: var(--regular);
   border-radius: 0.5rem;
   border: none;
+  text-align: center;
 }
 .btn:hover,
 a:hover {
