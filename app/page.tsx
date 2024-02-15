@@ -48,13 +48,13 @@ export default function Home() {
               <h1 className="title">
                 As Embalagens 
                 Personalizadas ABC Pack
-                <span> são a solução ideal para
+                <span> são as soluções ideais para
                 destacar o seu negócio
                 </span>
               </h1>
               <p className="text-complementary">
                 Se você busca <span>elevar a experiência do seu
-                delivery e deixar uma marca memorável,</span>
+                delivery e deixar uma marca memorável, </span>
                 está no lugar certo. 
               </p>
               <Link href="#" className="btn btn-blue">
