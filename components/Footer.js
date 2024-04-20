@@ -15,8 +15,8 @@ const Footer = () => {
           <div className="col col-first">
             <Image src={Logo} alt="" className="logo" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut l magna
-              aliqua. Ut enim ad minim veniam,
+              As Embalagens Personalizadas ABC Pack são as soluções ideais para destacar o seu
+              negócio.
             </p>
           </div>
           <div className="col col-second">
@@ -48,19 +48,20 @@ const Footer = () => {
             </div>
           </div>
           <div className="col col-third">
-            <h4 className="footer-title">Mapa do Site</h4>
+            <h4 className="footer-title">Endereço</h4>
             <ul className="footer-list">
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
+              <li>R. Nossa Sra. da Boa Viagem, 921 </li>
+              <li>Ferrazópolis, São Bernardo do Campo </li>
+              <li>SP, 09781-000</li>
             </ul>
             <Link href="#" className="row-contact">
               <Image src={iconTelephone} alt="" />
-              (xx) xxxxx-xxxx
+              (11) 95467-4875
             </Link>
-            <Link href="#" className="row-contact">
+            {/* <Link href="#" className="row-contact">
               <Image src={iconTelephone} alt="" />
               (xx) xxxxx-xxxx
-            </Link>
+            </Link> */}
           </div>
           <div className="copyright">
             <p>
