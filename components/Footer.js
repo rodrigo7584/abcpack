@@ -54,7 +54,11 @@ const Footer = () => {
               <li>Ferrazópolis, São Bernardo do Campo </li>
               <li>SP, 09781-000</li>
             </ul>
-            <Link href="#" className="row-contact">
+            <Link
+              href="https://api.whatsapp.com/send?phone=5511954674875"
+              target="_blank"
+              className="row-contact"
+            >
               <Image src={iconTelephone} alt="" />
               (11) 95467-4875
             </Link>
