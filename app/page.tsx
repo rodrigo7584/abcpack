@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import LinkWhatsapp from '../components/LinkWhatsapp'
 
 import SwiperProjects from "../components/SwiperProjects"
 import SwiperClients from "../components/SwiperClients"
@@ -57,9 +57,7 @@ export default function Home() {
                 delivery e deixar uma marca memorável, </span>
                 está no lugar certo. 
               </p>
-              <Link target="_blank" href="https://wa.me/5555119546748?text=ol%C3%A1%2C+tenho+uma+d%C3%BAvida+sobre+o+ABC+Pack" className="btn btn-blue">
-                Saiba Mais
-              </Link>
+              <LinkWhatsapp type="botao" classes="btn btn-blue" text="Saiba Mais" />
             </div>
             <div className="col-right">
               <Image src={HeroImage} quality={100} priority alt=""/>
@@ -86,9 +84,7 @@ export default function Home() {
                 embalagem personalizadas, você pode destacar sua marca e transmitir a mensagem certa para seus clientes. Nós oferecemos a experiÊncia e a expertise necessárias para elevar o valor da sua marca. Conte conosco para obter embalagens de qualidade que irão impressionar seus clinetes e diferencial seu negócio
                 do mercado.
               </p>
-              <Link target="_blank" href="https://wa.me/5555119546748?text=ol%C3%A1%2C+tenho+uma+d%C3%BAvida+sobre+o+ABC+Pack" className="btn btn-blue">
-                Entre em contato
-              </Link>
+              <LinkWhatsapp type="botao" classes="btn btn-blue" text="Entre em contato" />
             </div>
           </div>
         </div>
@@ -133,9 +129,7 @@ export default function Home() {
                 produzidar por nós que surpreende nossos clientes.
               </p>
               <SwiperProjects/>
-              <Link target="_blank" href="https://wa.me/5555119546748?text=ol%C3%A1%2C+tenho+uma+d%C3%BAvida+sobre+o+ABC+Pack"  className="btn btn-blue">
-                Entrar em contato
-              </Link>
+              <LinkWhatsapp type="botao" classes="btn btn-blue" text="Entre em contato" />
             </div>
           </div>
         </div>
@@ -186,7 +180,7 @@ export default function Home() {
                 <span>Clique no botão abaixo para transformar a forma 
                 como seu negócio é percebido!</span>
               </p>
-              <Link target="_blank" href="https://wa.me/5555119546748?text=ol%C3%A1%2C+tenho+uma+d%C3%BAvida+sobre+o+ABC+Pack"  className="btn btn-blue">Quero Transformar meu Delivery Agora!</Link>
+              <LinkWhatsapp type="botao" classes="btn btn-blue" text="Quero Transformar meu Delivery Agora!" />
               <p>*Consulte os termos e condições.</p>
             </div>
             <div className="col-right">

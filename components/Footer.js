@@ -5,7 +5,8 @@ import Link from 'next/link'
 import Logo from '../public/logo.png'
 import iconFacebook from '../public/icon-facebook.png'
 import iconInstagram from '../public/icon-instagram.png'
-import iconTelephone from '../public/icon-telephone.png'
+
+import LinkWhatsapp from './LinkWhatsapp'
 
 const Footer = () => {
   return (
@@ -54,18 +55,7 @@ const Footer = () => {
               <li>Ferrazópolis, São Bernardo do Campo </li>
               <li>SP, 09781-000</li>
             </ul>
-            <Link
-              href="https://api.whatsapp.com/send?phone=5511954674875"
-              target="_blank"
-              className="row-contact"
-            >
-              <Image src={iconTelephone} alt="" />
-              (11) 95467-4875
-            </Link>
-            {/* <Link href="#" className="row-contact">
-              <Image src={iconTelephone} alt="" />
-              (xx) xxxxx-xxxx
-            </Link> */}
+            <LinkWhatsapp type="link" classes="row-contact" text="(11) 95467-4875" />
           </div>
           <div className="copyright">
             <p>
